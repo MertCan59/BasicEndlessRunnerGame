@@ -13,8 +13,9 @@ public class Spawner : MonoBehaviour
     {
         while(!player.isDead)
         {
-            Instantiate(obstacles, new Vector3(Random.Range(-4f,7.5f),0.75f, 0f), Quaternion.identity);
-            yield return new  WaitForSeconds(0.5f);
+            Instantiate(obstacles, new Vector3(Random.Range(0f,7.5f),0.75f, 0f), Quaternion.identity);
+            Instantiate(obstacles, new Vector3(Random.Range(-4f,0f),0.75f, 0f), Quaternion.identity);
+            yield return new  WaitForSeconds(0.3f);
         }
     }
 }

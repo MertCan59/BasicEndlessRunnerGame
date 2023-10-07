@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
     }
-    public void project(Vector2 direction)
+    public void Project(Vector2 direction)
     {
         rigidbody.AddForce(direction*speed*Time.deltaTime);
         Destroy(gameObject,maxLifeTime);

@@ -26,6 +26,6 @@ public class Player : MonoBehaviour
     private void Shoot()
     {
         Bullet bullet=Instantiate(bulletPrefab,transform.position,transform.rotation);
-        bullet.project(transform.up);
+        bullet.Project(transform.up);
     }
 }
