@@ -26,6 +26,5 @@ public class UIManager : MonoBehaviour
     public void WriteScore()
     {
             text.text = GameManager.instance.score.ToString();
-        
     }
 }
