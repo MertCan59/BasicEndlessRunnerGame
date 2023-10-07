@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Obstacles : MonoBehaviour
 {
-    private new Rigidbody2D rigidbody;
+    private Rigidbody2D rigidbody;
     [SerializeField] private float lives=1;
      public bool isDead;
     private void Awake()

@@ -6,8 +6,8 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 500f;
     public float maxLifeTime = 10f;
-    private new Rigidbody2D rigidbody;
-    // TODO: public GameObject enemyPrefab;
+    private  Rigidbody2D rigidbody;
+
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
